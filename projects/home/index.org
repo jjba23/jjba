@@ -1,0 +1,49 @@
+#+title: Join the Free World - Joe's Website
+#+options: num:nil toc:nil
+#+author: Josep Jesus Bigorra Algaba
+#+email: jjbigorra@gmail.com
+
+I am /Josep Bigorra/, call me /Joe/. 
+Welcome to my few squre meters of internet 🤟🏼 !
+
+I am a /Software Engineer/ ⚙️, member of /the church of Emacs/, /GNU/Linux, Nix and Haskell fanatic/, living in the Netherlands 🇳🇱.
+You could also describe me as Functional Programming/ Enthusiast, /Free Software/ Advocate and perfectionist.
+
+
+#+begin_html
+<aside>
+<p><a href="../blog/index.html">Come checkout my blog here</a>, where I discuss programming, my thoughts on life, and write some guides.</p>
+<p><a href="https://wikimusic.jointhefreeworld.org/">Come checkout WikiMusic</a>, the invite-only high quality music database, tabs, sheets</p>
+</aside>
+#+end_html
+
+
+* More 
+I strive for a free world and I'm a supporter of the Free Software Foundation. 
+
+I want you to feel at home here in this corner of the web, and that you join me in my adventure for more freedom in our day-to-day computing. Join the free world we've built, thanks to GNU, Linux and thousands of other wonderful projects.
+
+I'm always working on computer systems, improving my Emacs workflow and config file, working with functional programming, engineering reliable systems and databases.
+
+You can also find me playing some guitar 🎸, or doing some CrossFit.
+
+#+begin_html
+<div class="mt-6 flex flex-row flex-wrap gap-4 align-center justify-center">
+<iframe height="auto" class="w-1/3 md:w-1/2 rounded-xl" src="https://www.youtube.com/embed/2R_eqyUUE04?si=Q_D-kQM2RBDkMnTh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay=1></iframe>
+<iframe height="auto" class="w-1/3 md:w-1/2 rounded-xl" src="https://www.youtube.com/embed/Y0L669ftogE?si=w_beTUrnigWZypUr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+#+end_html
+
+* My code
+
+See all the source code for my projects at GitLab: https://gitlab.com/jjba-projects. I try to release all my personal projects in a way that is free as in freedom and released under the GNU General Public License (GPL) v3.0 or later.
+
+Find the source code for this very website https://gitlab.com/jjba-projects/jjba , also released under the GNU GPL.
+
+🐧
+
+** My technology choices
+
+I develop all kinds of tech solutions for day to day problems of me and of my clients. Along the years I have developed some tastes and choices, along with experience in certain tooling. Tech changes fast. But it’s becoming an ever-more critical component of success.
+
+See my tech radar here: [[file:../blog/articles/development/tech-radar.html][My Tech Radar]].

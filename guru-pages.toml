@@ -1,0 +1,5 @@
+destination-folder = "./dist"
+file-pattern = "**/*.org"
+read-location = "projects"
+input-format = ".org"
+output-format = ".html"

@@ -1,0 +1,24 @@
+ #+title: JJBA
+#+author: Josep Jesus Bigorra Algaba
+#+email: jjbigorra@gmail.com
+#+property: header-args :comments org
+#+auto_tangle: t
+#+options: num:nil
+
+* λ JJBA
+
+Hi, my name is Josep Jesus Bigorra Algaba. This project contains my personal homepage, the documentation for my projects, and my blog.
+
+If you like my work, please support me by [[https://bmc.link/jjbigorra][buying me a cup of coffee ☕]] so I can continue with a lot of motivation.
+
+Each project's HTML output is generated with Haskell code and Org files accompanied by the necessary sprinkles of HTML, CSS and Javascript.
+
+Visit [[https://jointhefreeworld.org/][jointhefreeworld.org]].
+
+It is recommended to run this project using the Nix package manager.
+You can see the Makefile for common tasks.
+
+** Why ?
+If you write your notes and articles and everything imaginable in [[https://orgmode.org/][Org mode]], you can then export this content into PDF, HTML, Markdown, Latex and much more.
+
+Also, Emacs is very powerful software, and some say it's more of an operating system than a text editor, so I feel comfy writing my brain dumps in Emacs.

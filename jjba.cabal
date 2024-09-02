@@ -1,0 +1,115 @@
+cabal-version: 1.12
+
+name: jjba
+version: 0.2.0.0
+description: Please see the README at <https://gitlab.com/jjba-projects/jjba>                              
+homepage: https://gitlab.com/jjba-projects/jjba
+author:         Josep Bigorra
+maintainer:     Josep Bigorra <jjbigorra@gmail.com>
+copyright:      2023 Josep Bigorra
+license:        GPL-3
+build-type:     Simple          
+
+library
+  exposed-modules:
+    Lib
+    GuruPages.Free.Configurator
+    GuruPages.Configurator.FromFileConfigurator
+    GuruPages.Free.Log
+    GuruPages.Free.Clock
+    GuruPages.Clock.LiveClock
+    GuruPages.Log.ConsoleLog
+    GuruPages.HtmlPage
+    GuruPages.Model
+    GuruPages.Free.Storage
+    GuruPages.Storage.Filesystem
+    GuruPages.Free.DataSource
+    GuruPages.DataSource.OrgFilesDataSource
+  other-modules:
+      Paths_jjba
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
+  default-extensions:
+      DataKinds
+      DefaultSignatures
+      DuplicateRecordFields
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      RecordWildCards
+      TypeFamilies
+      ViewPatterns
+  build-depends:
+    base
+    , pandoc
+    , neat-interpolation
+    , blaze-html
+    , relude
+    , Glob
+    , blaze-markup
+    , optics
+    , free-alacarte
+    , tomland
+    , time
+    , directory
+    , filepath
+  default-language: GHC2021
+
+executable jjba-exe
+  main-is: Main.hs
+  other-modules:
+    Paths_jjba
+  hs-source-dirs:
+    app               
+  ghc-options: -Wall -Weverything -Wno-safe -Wno-unsafe -Wno-missing-import-lists -Wno-missing-deriving-strategies -Wno-missing-safe-haskell-mode -threaded -rtsopts -with-rtsopts=-N
+  default-extensions:
+      DataKinds
+      DefaultSignatures
+      DuplicateRecordFields
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiWayIf
+      NamedFieldPuns
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      RecordWildCards
+      TypeFamilies
+      ViewPatterns
+  build-depends:    
+    base
+    , pandoc
+    , neat-interpolation
+    , blaze-html
+    , relude
+    , Glob
+    , blaze-markup
+    , optics
+    , free-alacarte
+    , jjba
+    , tomland
+    , time
+    , directory
+    , filepath
+  default-language: GHC2021
+
+  
