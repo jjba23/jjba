@@ -25,4 +25,4 @@ Note that unless otherwise mentioned, list items are in the ~adopt~ phase.
 * Techniques
 ** Nix Flakes
 ** Nix dev shells
-** GitLab CI/CD
+** GitHub CI/CD

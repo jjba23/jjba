@@ -348,7 +348,7 @@ interface IStepExecutor {
     void deleteDir()
 
     /**
-     * Update the commit status in GitLab
+     * Update the commit status in GitHub
      * @param name
      * @param status
      */
@@ -364,11 +364,11 @@ interface IStepExecutor {
     void slackSend(String channel, String color, String iconEmoji, String message)
 
     /**
-     * Accept GitLab Merge Request
+     * Accept GitHub Merge Request
      * @param useMRDescription
      * @param removeSourceBranch
      */
-    void acceptGitLabMR(Boolean useMRDescription, Boolean removeSourceBranch)
+    void acceptGitHubMR(Boolean useMRDescription, Boolean removeSourceBranch)
 
     /**
      * Archive JUnit-formatted test results
@@ -510,8 +510,8 @@ final class StepExecutor implements IStepExecutor {
     }
 
     @Override
-    void acceptGitLabMR(Boolean useMRDescription, Boolean removeSourceBranch) {
-        this.steps.acceptGitLabMR useMRDescription: useMRDescription, removeSourceBranch: removeSourceBranch
+    void acceptGitHubMR(Boolean useMRDescription, Boolean removeSourceBranch) {
+        this.steps.acceptGitHubMR useMRDescription: useMRDescription, removeSourceBranch: removeSourceBranch
     }
 
     @Override

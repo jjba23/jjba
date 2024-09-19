@@ -105,7 +105,7 @@ A good move is also to check that you have a clearly defined separation between 
 
 * Give an example of SIM please ?
 
-A prime example of SIM can be found in the WikiMusic API project, designed with SIM in mind from the start, and making use of free monads and interpreters: https://gitlab.com/jjba-projects/wikimusic-api
+A prime example of SIM can be found in the WikiMusic API project, designed with SIM in mind from the start, and making use of free monads and interpreters: https://github.com/jjba23/wikimusic-api
 
 SIM takes many forms and knows many ways. What is important is that you follow the school of thought, not how you named a folder.
 
