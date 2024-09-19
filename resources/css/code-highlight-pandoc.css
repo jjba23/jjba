@@ -1,7 +1,5 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/6.0.0/iosevka/iosevka.min.css");
-
-pre { font-family: "'Iosevka Web', monospace";}
-code { font-family: "'Iosevka Web', monospace";}
+pre { font-family: "'Iosevka Comfy Wide', monospace";}
+code { font-family: "'Iosevka Comfy Wide', monospace";}
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }

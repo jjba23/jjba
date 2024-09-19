@@ -138,26 +138,26 @@ hTopSection pageTitle = TopContents $ do
   h1 ! class_ "text-2xl font-bold text-center my-2 font-serif" $ fromString . unpack $ pageTitle
   nav $ do
     B.div ! class_ "flex gap-8 flex-wrap flex-row px-6 justify-center align-center md:max-w-1/2" $ do
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "/index.html" $ "Home"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "/blog/index.html" $ "Blog"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "/cv/index.html" $ "CV/Resume"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "https://github.com/jjba23" $ "GitHub"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "https://www.linkedin.com/in/josepjba/" $ "LinkedIn"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "https://www.wikimusic.jointhefreeworld.org/" $ "WikiMusic"
-      a ! class_ "font-bold text-purple-500 font-mono text-sm" ! href "https://www.casadelcata.es/" $ "Holiday in the Canary Islands ?"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "/index.html" $ "Home"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "/blog/index.html" $ "Blog"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "/cv/index.html" $ "CV/Resume"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "https://github.com/jjba23" $ "GitHub"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "https://www.linkedin.com/in/josepjba/" $ "LinkedIn"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "https://www.wikimusic.jointhefreeworld.org/" $ "WikiMusic"
+      a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "https://www.casadelcata.es/" $ "Holiday in the Canary Islands ?"
 
 hFooterSection :: [Text] -> Maybe Text -> FooterContents
 hFooterSection authors maybeDate = FooterContents $ do
   p ! class_ "text-sm" $ preEscapedText "Copyright &copy; 2024 Josep Jesus Bigorra Algaba (JJBA)"
   p ! class_ "text-sm mt-2" $ do
     B.span ! class_ "text-sm" $ "All source code is licensed and available under the "
-    a ! class_ "text-sm text-purple-500 font-bold font-mono" ! href "https://www.gnu.org/licenses/gpl-3.0.en.html" $ "GNU GPL v3 license or newer"
+    a ! class_ "text-sm text-purple-500 font-bold font-sans" ! href "https://www.gnu.org/licenses/gpl-3.0.en.html" $ "GNU GPL v3 license or newer"
 
   p ! class_ "mt-2 mb-6 text-sm " $ "All media content is available under the Creative Commons License 4.0 or newer"
   (p ! class_ "mt-2 text-sm") . fromString . unpack $ "This page was written by: " <> T.intercalate ", " authors
   p ! class_ "mt-2 mb-6 text-sm " $ do
     B.span ! class_ "text-sm" $ "Find the source code powering this page: "
-    a ! class_ "text-sm text-purple-500 font-bold font-mono" ! href "https://github.com/jjba23/jjba" $ "on my GitHub"
+    a ! class_ "text-sm text-purple-500 font-bold font-sans" ! href "https://github.com/jjba23/jjba" $ "on my GitHub"
 
   maybe "" dateToHtml maybeDate
 
@@ -179,7 +179,7 @@ tailwindApplicationReplacers =
   [ PPRD
       { needle = "<a",
         replacement = Nothing,
-        classList = ["font-bold", "font-mono", "text-sm", "text-purple-500", "hover:text-cyan-700"]
+        classList = ["font-bold", "font-sans", "text-md", "text-purple-500", "hover:text-cyan-700"]
       },
     PPRD
       { needle = "<p",
