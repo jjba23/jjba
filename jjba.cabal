@@ -1,9 +1,9 @@
 cabal-version: 1.12
 
 name: jjba
-version: 0.2.0.0
-description: Please see the README at <https://gitlab.com/jjba-projects/jjba>                              
-homepage: https://gitlab.com/jjba-projects/jjba
+version: 0.3.0.0
+description: Please see the README at <https://github.com/jjba23/jjba>                              
+homepage: https://github.com/jjba23/jjba
 author:         Josep Bigorra
 maintainer:     Josep Bigorra <jjbigorra@gmail.com>
 copyright:      2023 Josep Bigorra
@@ -52,7 +52,7 @@ library
       TypeFamilies
       ViewPatterns
   build-depends:
-    base
+    base < 5
     , pandoc
     , neat-interpolation
     , blaze-html
@@ -96,20 +96,9 @@ executable jjba-exe
       TypeFamilies
       ViewPatterns
   build-depends:    
-    base
-    , pandoc
-    , neat-interpolation
-    , blaze-html
+    base < 5
     , relude
-    , Glob
-    , blaze-markup
-    , optics
-    , free-alacarte
     , jjba
-    , tomland
-    , time
-    , directory
-    , filepath
   default-language: GHC2021
 
   

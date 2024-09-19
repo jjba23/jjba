@@ -33,8 +33,8 @@ orgFileToEntry :: (MonadIO m) => GuruConfig -> FilePath -> m RawEntry
 orgFileToEntry cfg orgFilePath = do
   fileContents <- liftIO $ decodeUtf8 <$> readFileBS orgFilePath
   (htmlContents, pandoc) <- orgTextToHtml fileContents
-  pure $
-    RawEntry
+  pure
+    $ RawEntry
       { htmlContents = htmlContents,
         pandoc = pandoc,
         destinationPath = makeDestinationFilePath . pack $ orgFilePath

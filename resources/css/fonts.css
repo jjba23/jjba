@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Iosevka Comfy Wide';
+    src: url('/resources/css/iosevka-comfy-wide-normalbolditalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Iosevka Comfy Wide';
+    src: url('/resources/css/iosevka-comfy-wide-normalboldupright.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iosevka Comfy Wide';
+    src: url('/resources/css/iosevka-comfy-wide-normalregularitalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Iosevka Comfy Wide';
+    src: url('/resources/css/iosevka-comfy-wide-normalregularupright.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');

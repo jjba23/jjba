@@ -91,13 +91,12 @@ hHead docTitle' = B.head $ do
   meta ! name "viewport" ! content "width=device-width, initial-scale=1"
   meta ! charset "UTF-8"
   B.title . fromString . unpack $ docTitle'
-  link ! rel "preconnect" ! href "https://fonts.googleapis.com"
-  link ! rel "preconnect" ! href "https://fonts.gstatic.com"
-  link ! rel "stylesheet" ! href "https://fonts.googleapis.com/css2?family=Inconsolata:ital,wght@0,100..700;1,100..700&display=swap"
-  link ! rel "stylesheet" ! href "https://fonts.cdnfonts.com/css/aileron"
   link ! rel "stylesheet" ! href "/resources/css/code-highlight-pandoc.css"
-  B.style . fromString . unpack $
-    [untrimming|
+  link ! rel "stylesheet" ! href "/resources/css/fonts.css" ! media "print" ! onload "this.media='all'"
+  B.style
+    . fromString
+    . unpack
+    $ [untrimming|
     html {
       min-height: 100%;
     }
@@ -119,10 +118,10 @@ hBody :: TopContents -> MainContents -> FooterContents -> Html
 hBody topSectionContents centerContents footerContents = mBody $ do
   noscript
     $ iframe
-      ! src "https://www.googletagmanager.com/ns.html?id=GTM-W44GSDSJ"
-      ! height "0"
-      ! width "0"
-      ! BA.style "display:none;visibility:hidden"
+    ! src "https://www.googletagmanager.com/ns.html?id=GTM-W44GSDSJ"
+    ! height "0"
+    ! width "0"
+    ! BA.style "display:none;visibility:hidden"
     $ ""
 
   B.div ! class_ "flex flex-wrap flex-col gap-4 items-center justify-center" $ do
@@ -131,7 +130,7 @@ hBody topSectionContents centerContents footerContents = mBody $ do
   B.div
     ! class_ "flex flex-col items-center justify-center text-left"
     $ B.div
-      ! class_ "my-6 w-full md:w-3/4 p-4"
+    ! class_ "my-6 w-full md:w-3/4 p-4"
     $ do
       centerContents ^. #value
 

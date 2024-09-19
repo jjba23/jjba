@@ -54,8 +54,13 @@ makeFieldLabelsNoPrefix ''GuruConfig
 guruConfigCodec :: TomlCodec GuruConfig
 guruConfigCodec =
   GuruConfig
-    <$> Toml.text "destination-folder" .= (^. #destinationFolder)
-    <*> Toml.text "file-pattern" .= (^. #filePattern)
-    <*> Toml.text "read-location" .= (^. #readLocation)
-    <*> Toml.text "input-format" .= (^. #inputFormat)
-    <*> Toml.text "output-format" .= (^. #outputFormat)
+    <$> Toml.text "destination-folder"
+    .= (^. #destinationFolder)
+    <*> Toml.text "file-pattern"
+    .= (^. #filePattern)
+    <*> Toml.text "read-location"
+    .= (^. #readLocation)
+    <*> Toml.text "input-format"
+    .= (^. #inputFormat)
+    <*> Toml.text "output-format"
+    .= (^. #outputFormat)

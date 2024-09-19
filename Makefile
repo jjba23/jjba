@@ -14,7 +14,7 @@ clean:
 
 build: clean fmt
 # Home and Blog
-	nix --extra-experimental-features 'nix-command flakes' --accept-flake-config run .#
+	stack run
 	cp -rfv resources dist/
 	cp -rfv dist/home/* dist/
 	rm -rfv dist/home
