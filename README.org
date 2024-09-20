@@ -22,3 +22,9 @@ You can see the Makefile for common tasks.
 If you write your notes and articles and everything imaginable in [[https://orgmode.org/][Org mode]], you can then export this content into PDF, HTML, Markdown, Latex and much more.
 
 Also, Emacs is very powerful software, and some say it's more of an operating system than a text editor, so I feel comfy writing my brain dumps in Emacs.
+
+* Project management
+
+** Add footer line to separate
+
+** Make date in blog list more tabular/mono
