@@ -26,7 +26,6 @@ build: clean fmt
 	rm -rfv dist
 	mv dist-min/dist dist
 	rm -rfv dist-min
-	cp -rfv resources/css/*.ttf dist/resources/css/
 
 dev: build
 # watchexec -r -e hs,org,css,js "make build && simple-http-server --nocache -i -p 8989 ./dist"

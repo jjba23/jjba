@@ -3,17 +3,17 @@ tailwind.config = {
     theme: {
 	fontFamily: {
 	    sans: [
-		'Inter',
+		'Roboto Condensed',
 		'ui-sans-serif',
 		'system-ui',
 		'sans-serif',
 	    ],
 	    serif: [
-		'Inter',
+		'Roboto Slab',
 		'serif'
 	    ],
 	    mono: [
-		'Iosevka Comfy Wide',
+		'Roboto Mono',
 		'monospace',
 	    ]
 	}

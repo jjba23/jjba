@@ -135,7 +135,7 @@ hBody topSectionContents centerContents footerContents = body ! class_ "p-3 bg-a
 
 hTopSection :: Text -> TopContents
 hTopSection pageTitle = TopContents $ do
-  h1 ! class_ "text-2xl font-bold text-center my-2 font-serif" $ fromString . unpack $ pageTitle
+  h1 ! class_ "text-2xl font-bold text-center my-2 font-sans" $ fromString . unpack $ pageTitle
   nav $ do
     B.div ! class_ "flex gap-8 flex-wrap flex-row px-6 justify-center align-center md:max-w-1/2" $ do
       a ! class_ "font-bold text-purple-500 font-sans text-sm" ! href "/index.html" $ "Home"
@@ -189,27 +189,27 @@ tailwindApplicationReplacers =
     PPRD
       { needle = "<h1",
         replacement = Nothing,
-        classList = ["text-2xl", "font-bold", "font-serif", "my-6"]
+        classList = ["text-2xl", "font-bold", "font-sans", "my-6"]
       },
     PPRD
       { needle = "<h2",
         replacement = Nothing,
-        classList = ["text-xl", "font-bold", "font-serif", "my-6", "text-pink-500"]
+        classList = ["text-xl", "font-bold", "font-sans", "my-6", "text-pink-500"]
       },
     PPRD
       { needle = "<h3",
         replacement = Nothing,
-        classList = ["text-lg", "font-bold", "font-serif", "my-4"]
+        classList = ["text-lg", "font-bold", "font-sans", "my-4"]
       },
     PPRD
       { needle = "<h4",
         replacement = Nothing,
-        classList = ["text-md", "font-bold", "font-serif", "my-4"]
+        classList = ["text-md", "font-bold", "font-sans", "my-4"]
       },
     PPRD
       { needle = "<h5",
         replacement = Nothing,
-        classList = ["text-md", "font-bold", "font-serif", "my-4"]
+        classList = ["text-md", "font-bold", "font-sans", "my-4"]
       },
     PPRD
       { needle = "<img",
