@@ -82,13 +82,12 @@ Create a Guix configuration file on the Debian system. It defines how
 Build a Guix VM image. This will be the qemu hard drive for your Guix VM.
 
    #+begin_example
-    user@debian:~$ guix system image --image-type=qcow2 --image-size=140G config.scm
+guix system image --image-type=qcow2 --image-size=140G config.scm
    #+end_example
 
    This will take a while.
 
-   At the end of the process, it will leave you with the name of a qcow2
-   image file:
+   At the end of the process, it will leave you with the name of a qcow2 image file:
 
    #+begin_example
     /gnu/store/z08hk66ig6dn32ivvysphr0d2b0alym0-image.qcow2
